@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A27B943B1CBF447E0071EAE4 /* MannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B94391CBF447E0071EAE4 /* MannerTableViewCell.swift */; };
+		A27B943C1CBF447E0071EAE4 /* MannerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A27B943A1CBF447E0071EAE4 /* MannerTableViewCell.xib */; };
 		A27D27A01CBDD7A0001D3EE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D279F1CBDD7A0001D3EE4 /* AppDelegate.swift */; };
 		A27D27A21CBDD7A0001D3EE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D27A11CBDD7A0001D3EE4 /* ViewController.swift */; };
 		A27D27A51CBDD7A0001D3EE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27D27A31CBDD7A0001D3EE4 /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 		A27D27AD1CBDD7A1001D3EE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27D27AB1CBDD7A1001D3EE4 /* LaunchScreen.storyboard */; };
 		A27D27B81CBDD7A1001D3EE4 /* LearnMannersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D27B71CBDD7A1001D3EE4 /* LearnMannersTests.swift */; };
 		A27D27C31CBDD7A2001D3EE4 /* LearnMannersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D27C21CBDD7A2001D3EE4 /* LearnMannersUITests.swift */; };
+		A2FF6F9F1CBF696900312F73 /* Manner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FF6F9E1CBF696900312F73 /* Manner.swift */; };
+		A2FF6FA11CC031E300312F73 /* MannerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FF6FA01CC031E300312F73 /* MannerDetailViewController.swift */; };
+		A2FF6FA31CC0409E00312F73 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FF6FA21CC0409E00312F73 /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A27B94391CBF447E0071EAE4 /* MannerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MannerTableViewCell.swift; sourceTree = "<group>"; };
+		A27B943A1CBF447E0071EAE4 /* MannerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MannerTableViewCell.xib; sourceTree = "<group>"; };
 		A27D279C1CBDD79F001D3EE4 /* LearnManners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnManners.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27D279F1CBDD7A0001D3EE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27D27A11CBDD7A0001D3EE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +56,9 @@
 		A27D27BE1CBDD7A1001D3EE4 /* LearnMannersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnMannersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27D27C21CBDD7A2001D3EE4 /* LearnMannersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMannersUITests.swift; sourceTree = "<group>"; };
 		A27D27C41CBDD7A2001D3EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2FF6F9E1CBF696900312F73 /* Manner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manner.swift; sourceTree = "<group>"; };
+		A2FF6FA01CC031E300312F73 /* MannerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MannerDetailViewController.swift; sourceTree = "<group>"; };
+		A2FF6FA21CC0409E00312F73 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,11 @@
 				A27D27AB1CBDD7A1001D3EE4 /* LaunchScreen.storyboard */,
 				A27D27AE1CBDD7A1001D3EE4 /* Info.plist */,
 				A27D27A61CBDD7A1001D3EE4 /* LearnManners.xcdatamodeld */,
+				A27B94391CBF447E0071EAE4 /* MannerTableViewCell.swift */,
+				A27B943A1CBF447E0071EAE4 /* MannerTableViewCell.xib */,
+				A2FF6F9E1CBF696900312F73 /* Manner.swift */,
+				A2FF6FA01CC031E300312F73 /* MannerDetailViewController.swift */,
+				A2FF6FA21CC0409E00312F73 /* HomePageViewController.swift */,
 			);
 			path = LearnManners;
 			sourceTree = "<group>";
@@ -235,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A27B943C1CBF447E0071EAE4 /* MannerTableViewCell.xib in Resources */,
 				A27D27AD1CBDD7A1001D3EE4 /* LaunchScreen.storyboard in Resources */,
 				A27D27AA1CBDD7A1001D3EE4 /* Assets.xcassets in Resources */,
 				A27D27A51CBDD7A0001D3EE4 /* Main.storyboard in Resources */,
@@ -262,7 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2FF6FA11CC031E300312F73 /* MannerDetailViewController.swift in Sources */,
+				A2FF6FA31CC0409E00312F73 /* HomePageViewController.swift in Sources */,
+				A27B943B1CBF447E0071EAE4 /* MannerTableViewCell.swift in Sources */,
 				A27D27A21CBDD7A0001D3EE4 /* ViewController.swift in Sources */,
+				A2FF6F9F1CBF696900312F73 /* Manner.swift in Sources */,
 				A27D27A81CBDD7A1001D3EE4 /* LearnManners.xcdatamodeld in Sources */,
 				A27D27A01CBDD7A0001D3EE4 /* AppDelegate.swift in Sources */,
 			);
@@ -491,6 +511,7 @@
 				A27D27C91CBDD7A2001D3EE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A27D27CA1CBDD7A2001D3EE4 /* Build configuration list for PBXNativeTarget "LearnMannersTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +520,7 @@
 				A27D27CC1CBDD7A2001D3EE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A27D27CD1CBDD7A2001D3EE4 /* Build configuration list for PBXNativeTarget "LearnMannersUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +529,7 @@
 				A27D27CF1CBDD7A2001D3EE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
