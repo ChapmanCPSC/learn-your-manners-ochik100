@@ -7,8 +7,15 @@
 //
 
 import UIKit
+import MessageUI
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MFMailComposeViewControllerDelegate {
+    
+    @IBOutlet weak var sendSummaryButton: UIButton!
+    
+    var emailAddress : AnyObject!
+    
+    var summary : [Int] = []
     
     var manners : [Manner] = [
         Manner(title: "Eye Contact", image: "eye_contact", info: "Always make eye contact with the person you are speaking to."),
@@ -37,6 +44,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let mannerCellNib = UINib(nibName: MannerTableViewCell.MANNER_DETAIL_NIB_NAME, bundle: nil)
         self.mannerTableView.registerNib(mannerCellNib, forCellReuseIdentifier: MannerTableViewCell.MANNER_CELL_ID)
         
+        if emailAlreadyExist() {
+            sendSummaryButton.hidden = false
+        } else {
+            sendSummaryButton.hidden = true
+        }
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        if emailAlreadyExist() {
+            sendSummaryButton.hidden = false
+        } else {
+            sendSummaryButton.hidden = true
+        }
+    }
+   
+    func emailAlreadyExist() -> Bool {
+        emailAddress = NSUserDefaults.standardUserDefaults().objectForKey("email_address")
+        return emailAddress != nil
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -54,18 +80,48 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let detailVC = navVC.viewControllers[0] as! MannerDetailViewController
         detailVC.manner = self.manners[indexPath.row]
         
+        summary.append(indexPath.row)
+        
         let currentCell = tableView.cellForRowAtIndexPath(indexPath) as! MannerTableViewCell
         currentCell.checkMarkImage.image = UIImage(named: "check")
-        
         
         self.presentViewController(navVC, animated: true, completion: nil)
         
     }
 
+    @IBAction func sendPressed(sender: AnyObject) {
+        let mailComposeViewController = configuredMailComposeViewController()
+        if MFMailComposeViewController.canSendMail() {
+            self.presentViewController(mailComposeViewController, animated: true, completion: nil)
+        }
+    }
+    
+    func configuredMailComposeViewController() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self
+        
+        mailComposerVC.setToRecipients([emailAddress as! String])
+        mailComposerVC.setSubject("Summary of Manners Learned")
+        
+        var message = "List of Manners Learned:\n"
+        for index in summary {
+            message.appendContentsOf(manners[index].title + "\n")
+        }
+        mailComposerVC.setMessageBody(message, isHTML: false)
+        
+        return mailComposerVC
+    }
+    
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return manners.count
     }
     
+    @IBAction func settingsPressed(sender: AnyObject) {
+    }
     @IBAction func homePressed(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }

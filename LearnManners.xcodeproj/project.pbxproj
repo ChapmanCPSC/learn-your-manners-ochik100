@@ -17,6 +17,7 @@
 		A27D27AD1CBDD7A1001D3EE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27D27AB1CBDD7A1001D3EE4 /* LaunchScreen.storyboard */; };
 		A27D27B81CBDD7A1001D3EE4 /* LearnMannersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D27B71CBDD7A1001D3EE4 /* LearnMannersTests.swift */; };
 		A27D27C31CBDD7A2001D3EE4 /* LearnMannersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D27C21CBDD7A2001D3EE4 /* LearnMannersUITests.swift */; };
+		A2C420711CD1829B00151707 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C420701CD1829B00151707 /* SettingsViewController.swift */; };
 		A2FF6F9F1CBF696900312F73 /* Manner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FF6F9E1CBF696900312F73 /* Manner.swift */; };
 		A2FF6FA11CC031E300312F73 /* MannerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FF6FA01CC031E300312F73 /* MannerDetailViewController.swift */; };
 		A2FF6FA31CC0409E00312F73 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FF6FA21CC0409E00312F73 /* HomePageViewController.swift */; };
@@ -56,6 +57,7 @@
 		A27D27BE1CBDD7A1001D3EE4 /* LearnMannersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnMannersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27D27C21CBDD7A2001D3EE4 /* LearnMannersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMannersUITests.swift; sourceTree = "<group>"; };
 		A27D27C41CBDD7A2001D3EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2C420701CD1829B00151707 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A2FF6F9E1CBF696900312F73 /* Manner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manner.swift; sourceTree = "<group>"; };
 		A2FF6FA01CC031E300312F73 /* MannerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MannerDetailViewController.swift; sourceTree = "<group>"; };
 		A2FF6FA21CC0409E00312F73 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				A2FF6F9E1CBF696900312F73 /* Manner.swift */,
 				A2FF6FA01CC031E300312F73 /* MannerDetailViewController.swift */,
 				A2FF6FA21CC0409E00312F73 /* HomePageViewController.swift */,
+				A2C420701CD1829B00151707 /* SettingsViewController.swift */,
 			);
 			path = LearnManners;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				A2FF6F9F1CBF696900312F73 /* Manner.swift in Sources */,
 				A27D27A81CBDD7A1001D3EE4 /* LearnManners.xcdatamodeld in Sources */,
 				A27D27A01CBDD7A0001D3EE4 /* AppDelegate.swift in Sources */,
+				A2C420711CD1829B00151707 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
